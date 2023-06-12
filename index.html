@@ -4,10 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="index.js" defer></script>
 </head>
-<body>
-  <div id="question"></div>
-  <div id="normalBoard"></div>
-  <div id="donkeyBoard"></div>
+<body><main>
+  <div id="question1">
+    <label for="quantity">Quantas pessoas vão jogar?</label>
+    <input type="number" name="quantity" id="quantity" min="2" max="4">
+    <button id="submit" >Nomear</button>
+  </div>
+  <div id="question2"></div>
+  <div id="mainScreen">
+    <div id="board"></div>
+    <button id="reset">ZERAR</button>
+    <button id="exit">SAIR</button>
+  </div>
+</main>
 </body>
 </html>
