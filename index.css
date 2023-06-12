@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightslategray;
+}
+
+main {
+  border: 7px solid black;
+  box-shadow: 16pt 16pt 6pt black;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 85%;
+  height: 45vh;
+  background-color: white;
+  margin-top: 4.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+#under {
+  border: 7px solid black;
+  box-shadow: 16pt 16pt 6pt black;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 85%;
+  height: 45vh;
+  background-color: white;
+  margin: auto;
+}
+
+#holeDomino {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ball {
+  background-color: rgb(155, 155, 155);
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: 44vh auto;
+  border-radius: 50% 50%;
+}
+
+.hide {
+  display: none;
+}
+
+#board {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.eachPlayer {
+  display: flex;
+  width: 80%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+#mainScreen {
+  width: 90%;
+}
+
+.buttonsBoard {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border: 2px solid black;
+  width: 3rem;
+  height: 1.5rem;
+}
+
+#functionsBtn {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.endBtn {
+  width: 6.5rem;
+}
+
+.msg {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.piu {
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  margin: 44vh auto;
+  border-radius: 50% 50%;
+}

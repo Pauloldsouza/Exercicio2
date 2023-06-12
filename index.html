@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="index.js" defer></script>
-</head>
-<body><main>
-  <div id="question1">
-    <label for="quantity">Quantas pessoas vão jogar?</label>
-    <input type="number" name="quantity" id="quantity" min="2" max="4">
-    <button id="submit" >Nomear</button>
-  </div>
-  <div id="question2"></div>
-  <div id="mainScreen">
-    <div id="board"></div>
-    <button id="reset">ZERAR</button>
-    <button id="exit">SAIR</button>
-  </div>
-</main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="holeDomino">
+      <main>
+        <div id="question1">
+          <label for="quantity">Quantas pessoas vão jogar?</label><br />
+          <input
+            type="number"
+            name="quantity"
+            id="quantity"
+            min="2"
+            max="3"
+          /><br />
+          <button id="submit" class="endBtn">Nomear</button>
+        </div>
+        <div id="question2"></div>
+        <div id="mainScreen">
+          <div id="board" style="display: none">
+            <div id="functionsBtn">
+              <button id="reset" class="endBtn">ZERAR</button>
+              <button id="exit" class="endBtn">SAIR</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div id="ball"></div>
+      <div id="under"></div>
+    </div>
+    <div id="victory"></div>
+  </body>
 </html>
